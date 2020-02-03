@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5E0E25B-8F08-4E3F-AB6F-7E9BBBCF6417}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SnappFood</RootNamespace>
+    <AssemblyName>SnappFood</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Coffee Shop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coffee Shop.Designer.cs">
+      <DependentUpon>Coffee Shop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confectionery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confectionery.Designer.cs">
+      <DependentUpon>Confectionery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SnappFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnappFood.Designer.cs">
+      <DependentUpon>SnappFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant.Designer.cs">
+      <DependentUpon>Restaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Super Market.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Super Market.Designer.cs">
+      <DependentUpon>Super Market.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Coffee Shop.resx">
+      <DependentUpon>Coffee Shop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confectionery.resx">
+      <DependentUpon>Confectionery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant.resx">
+      <DependentUpon>Restaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnappFood.resx">
+      <DependentUpon>SnappFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Super Market.resx">
+      <DependentUpon>Super Market.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2221.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20190209_004128_483.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supermarket.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chocolate-muffin-dark-surface_2829-6140.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chocolate-brownie-cake-piece-pie-homemade-pastries-sweet-cooking_114579-579.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window-display-with-delicious-cakes-bakery_23-2147893055.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-blurry-restaurant-shop-interior_1203-4031.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant-interior_1127-3394.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
