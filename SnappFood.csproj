@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addmember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addmember.Designer.cs">
+      <DependentUpon>addmember.cs</DependentUpon>
+    </Compile>
     <Compile Include="Coffee Shop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     <Compile Include="Super Market.Designer.cs">
       <DependentUpon>Super Market.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addmember.resx">
+      <DependentUpon>addmember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Coffee Shop.resx">
       <DependentUpon>Coffee Shop.cs</DependentUpon>
     </EmbeddedResource>

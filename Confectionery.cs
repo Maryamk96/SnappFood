@@ -7,24 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SnappFood
 {
     public partial class Confectionery : Form
     {
+        SqlConnection con = new SqlConnection("server =DESKTOP-9U7JFHJ;DataBase=SnappFood ; Integrated Security=true");
         public Confectionery()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=9C7J2Be07jE");
-        }
+        
 
         private void Confectionery_Load(object sender, EventArgs e)
         {
-            
+          
+
         }
 
         private void exit_Click(object sender, EventArgs e)

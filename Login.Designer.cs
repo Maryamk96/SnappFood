@@ -85,6 +85,7 @@
             this.addbtn.TabIndex = 3;
             this.addbtn.Text = "عضویت";
             this.addbtn.UseVisualStyleBackColor = true;
+            this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // man
             // 

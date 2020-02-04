@@ -148,6 +148,12 @@ namespace SnappFood
             enterbtn.Enabled = false;
         
         }
+
+        private void addbtn_Click(object sender, EventArgs e)
+        {
+            addmember add = new addmember();
+            add.Show();
+        }
     }
 
 }
