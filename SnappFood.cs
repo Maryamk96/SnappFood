@@ -123,6 +123,10 @@ namespace SnappFood
             res.Show();
         }
 
-   
+        private void مدیریتToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            managemember mn = new managemember();
+            mn.Show();
+        }
     }
 }

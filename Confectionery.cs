@@ -23,7 +23,12 @@ namespace SnappFood
 
         private void Confectionery_Load(object sender, EventArgs e)
         {
-          
+          /*  SqlDataAdapter seldata = new SqlDataAdapter("selectAdmin", con);
+            seldata.SelectCommand.CommandType = CommandType.StoredProcedure;
+            //return table
+            DataTable table = new DataTable();
+            seldata.Fill(table);
+            dataGridView1.DataSource = table;*/
 
         }
 

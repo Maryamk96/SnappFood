@@ -65,6 +65,10 @@ namespace SnappFood
                 command.Parameters.AddWithValue("@tell", telltext.Text);
                 command.Parameters.AddWithValue("@address", addresstext.Text);
                 command.Parameters.AddWithValue("@card", cardtext.Text);
+                command.Parameters.AddWithValue("@usertype", typetext.Text);
+                command.Parameters.AddWithValue("@email", emailtext.Text);
+                command.Parameters.AddWithValue("@userid", usrid.Text);
+
                 //open connection
                 con.Open();
                 command.ExecuteNonQuery();
@@ -78,8 +82,20 @@ namespace SnappFood
                 telltext.ResetText();
                 addresstext.ResetText();
                 cardtext.ResetText();
+                emailtext.ResetText();
+                usrid.ResetText();
                 nametext.Focus();
             }
+
+        }
+
+        private void exitbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void addmember_Load(object sender, EventArgs e)
+        {
 
         }
     }

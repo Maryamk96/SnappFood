@@ -63,6 +63,12 @@
     <Compile Include="Confectionery.Designer.cs">
       <DependentUpon>Confectionery.cs</DependentUpon>
     </Compile>
+    <Compile Include="managemember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managemember.Designer.cs">
+      <DependentUpon>managemember.cs</DependentUpon>
+    </Compile>
     <Compile Include="SnappFood.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Confectionery.resx">
       <DependentUpon>Confectionery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managemember.resx">
+      <DependentUpon>managemember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant.resx">
       <DependentUpon>Restaurant.cs</DependentUpon>
