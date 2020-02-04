@@ -19,6 +19,23 @@ namespace SnappFood
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Login login = new Login();
+            login.ShowDialog();
+            if (login.DialogResult != System.Windows.Forms.DialogResult.OK)
+            {
+                Application.ExitThread();
+            }
+            if(Login.flag==1)
+            {
+                menuStrip1.Items["A1"].Enabled = false;
+                menuStrip1.Items["A1"].Visible = false;
+            }
+            if(Login.flag==2)
+            {
+                menuStrip1.Items["A1"].Enabled = false;
+                menuStrip1.Items["A1"].Visible = false;
+            }
+
             label1.BackColor = System.Drawing.Color.Transparent;
             label2.BackColor = System.Drawing.Color.Transparent;
             label3.BackColor = System.Drawing.Color.Transparent;
@@ -43,6 +60,15 @@ namespace SnappFood
             ToolTip tip = new ToolTip();
             tip.SetToolTip(button1, ".کلیک کنید");
             tip.SetToolTip(label4, ".جهت ورود به برنامه و یا عضویت کلیک کنید ");
+
+           
+           /* if (Login.flag == 1)
+            {
+                menuStrip1.Items["A1"].Enabled = false;
+                menuStrip1.Items["B1"].Enabled = false;
+                menuStrip1.Items["A1"].Visible = false;
+                menuStrip1.Items["B1"].Visible = false;
+            }*/
 
         }
 
@@ -83,8 +109,12 @@ namespace SnappFood
 
         private void label10_Click(object sender, EventArgs e)
         {
+           // SnappFood snapp = new SnappFood();
+           // snapp.Visible = false;
             Confectionery Sweets = new Confectionery();
             Sweets.Show();
+           // this.Hide();
+            
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -92,5 +122,7 @@ namespace SnappFood
             Restaurant res = new Restaurant();
             res.Show();
         }
+
+   
     }
 }

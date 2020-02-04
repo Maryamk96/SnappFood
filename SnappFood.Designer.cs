@@ -44,7 +44,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.عملیاتاصلیToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.A1 = new System.Windows.Forms.ToolStripMenuItem();
             this.مدیریتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.مدیریترستورانهاToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -217,38 +217,38 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.عملیاتاصلیToolStripMenuItem});
+            this.A1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(962, 28);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // عملیاتاصلیToolStripMenuItem
+            // A1
             // 
-            this.عملیاتاصلیToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.A1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.مدیریتToolStripMenuItem,
             this.toolStripMenuItem1,
             this.مدیریترستورانهاToolStripMenuItem});
-            this.عملیاتاصلیToolStripMenuItem.Name = "عملیاتاصلیToolStripMenuItem";
-            this.عملیاتاصلیToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
-            this.عملیاتاصلیToolStripMenuItem.Text = "عملیات اصلی";
+            this.A1.Name = "A1";
+            this.A1.Size = new System.Drawing.Size(110, 24);
+            this.A1.Text = "عملیات اصلی";
             // 
             // مدیریتToolStripMenuItem
             // 
             this.مدیریتToolStripMenuItem.Name = "مدیریتToolStripMenuItem";
-            this.مدیریتToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.مدیریتToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.مدیریتToolStripMenuItem.Text = "مدیریت";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(209, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 6);
             // 
             // مدیریترستورانهاToolStripMenuItem
             // 
             this.مدیریترستورانهاToolStripMenuItem.Name = "مدیریترستورانهاToolStripMenuItem";
-            this.مدیریترستورانهاToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.مدیریترستورانهاToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.مدیریترستورانهاToolStripMenuItem.Text = "مدیریت رستوران ها";
             // 
             // groupBox3
@@ -405,7 +405,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem عملیاتاصلیToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem A1;
         private System.Windows.Forms.ToolStripMenuItem مدیریتToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem مدیریترستورانهاToolStripMenuItem;
